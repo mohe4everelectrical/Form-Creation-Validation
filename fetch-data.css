@@ -1,0 +1,84 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+#content {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 12px 0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+    color: #333;
+}
+
+li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #e3e9f7 0%, #a8bae8 100%);
+}
+
+#api-data {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.loading {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.error-message {
+    background-color: #ffe6e6;
+    color: #d63031;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #d63031;
+    text-align: center;
+    font-weight: 500;
+}
+
+.success-message {
+    background-color: #e6ffe6;
+    color: #00b894;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #00b894;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
